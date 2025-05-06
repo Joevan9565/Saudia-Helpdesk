@@ -5,7 +5,6 @@ from discord import ui
 from dotenv import load_dotenv
 import json
 
-GUILD_ID = 1198334486966968570
 async def save_ticket_transcript(ticket_channel):
     # Create a transcript of the ticket channel
     messages = await ticket_channel.history(limit=None).flatten()
